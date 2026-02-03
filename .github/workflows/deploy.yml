@@ -1,0 +1,21 @@
+name: Deploy a AWS Lightsail
+
+on:
+  push:
+    branches: [main] # Se activa cuando subes algo a la rama main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ejecutar comandos remotos via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ~/TU_NOMBRE_DE_REPO
+            git pull origin main
+            npm install
+            pm2 restart all
