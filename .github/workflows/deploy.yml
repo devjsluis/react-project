@@ -15,7 +15,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/TU_NOMBRE_DE_REPO
+            cd ~/react-project
             git pull origin main
             npm install
             pm2 restart all
