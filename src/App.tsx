@@ -16,7 +16,7 @@ function App() {
       >
         <h3>Estado del Servidor AWS:</h3>
         <p style={{ color: "#ff9900" }}>
-          ⏳ Esperando aprobación de cuota (24h)...
+          ⏳ Waiting aprobación de cuota (24h)...
         </p>
       </div>
     </div>
