@@ -5,7 +5,7 @@ function App() {
     <div
       style={{ textAlign: "center", marginTop: "50px", fontFamily: "Arial" }}
     >
-      <h1>Hola mundo</h1>
+      <h1>Hola mundo cruel</h1>
     </div>
   );
 }
